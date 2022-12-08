@@ -388,8 +388,9 @@ protected:
             *pData++ = pixels.loadAndScale1();
             *pData++ = pixels.loadAndScale2();
             pixels.advanceData();
-            pixels.stepDithering();
         }
+        pixels.stepDithering();
+
     }
 
     // -- Show pixels
@@ -426,8 +427,8 @@ protected:
             byteval = pixels.loadAndScale2();
             mRMTController.convertByte(byteval);
             pixels.advanceData();
-            pixels.stepDithering();
         }
+        pixels.stepDithering();
     }
 };
 
